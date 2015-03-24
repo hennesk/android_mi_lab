@@ -1,51 +1,53 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>Tic Tac Toe</title>
-		 <link rel="stylesheet" type="text/css" href="stylesheet5.css">
-<script type="text/javascript" charset="utf-8" src="phonegap.js"></script>
-<script type="text/javascript" src="ttt5.js"></script>
-
+		<title>Tik Tak, Bro</title>
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<script type="text/javascript" charset="utf-8" src="phonegap.js"></script>
+		<script type="text/javascript" src="js/tik_tak.js"></script>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
 	</head>
 
-	<body>
-		<div id="div0">
-		<center>
-		<h1>Tic Toe Toe</h1>
-		</center>
-		</div>	
-		
-		<div id="div1">
-		<h2 id="h2one">Controls</h2>
-		<ul>
-			<li><a href="" onclick="clearGame()">New Game</a></li>
-			<li><a href="scoreboard.html">Scoreboard</a></li>
-		</ul>
+<body>
+<div class="container">
+	<div class="row clearfix">
+		<div class="col-md-12 column">
+			<h3>
+				Tik Tak, Bro
+			</h3>
 		</div>
-		<br clear="all"/>
-
-		<div id="div2">
-		<h2 id="h2two">Players</h2>
-		<div id="label1">
-		<img class="avatar" id="player1image" src="profile7.png" onclick="changePhoto('player1image')" />
-		Player 1: X
+	</div>		
+	<div class="row clearfix">
+		<div class="col-md-12 column">
+			<div class="btn-group btn-group-justified">
+				<a class="btn btn-default btn-lg" type="button" onclick="clearGame()"><em class="glyphicon glyphicon-plus"></em> New Game</a>
+				<a class="btn btn-default btn-lg" type="button" href="scoreboard.html"><em class="glyphicon glyphicon-th-list"></em> Scoreboard</a>
+			</div>
 		</div>
-		<div id="label2">
-		<img class="avatar" id="player2image" src="profile7.png" onclick="changePhoto('player2image')" />
-		Player 2: O
+	</div>
+	<div class="row clearfix">
+		<div class="col-md-12 column">
+			<div class="btn-group btn-group-justified">
+				<a class="btn btn-default btn-lg avatar"> <img id="player1image" src="profile7.png" onclick="changePhoto('player1image')" /> X </a>
+				<a class="btn btn-default btn-lg avatar"> <img id="player2image" src="profile7.png" onclick="changePhoto('player2image')" /> O </a>
+			</div>
 		</div>
-
-			<img id="board" src="board.png" />
-			<img class="move" id="box1" src="blank.png" onclick="toggleBox('box1')" />
-			<img class="move" id="box2" src="blank.png" onclick="toggleBox('box2')" />
-			<img class="move" id="box3" src="blank.png" onclick="toggleBox('box3')" />
-			<img class="move" id="box4" src="blank.png" onclick="toggleBox('box4')" />
-			<img class="move" id="box5" src="blank.png" onclick="toggleBox('box5')" />
-			<img class="move" id="box6" src="blank.png" onclick="toggleBox('box6')" />
-			<img class="move" id="box7" src="blank.png" onclick="toggleBox('box7')" />
-			<img class="move" id="box8" src="blank.png" onclick="toggleBox('box8')" />
-			<img class="move" id="box9" src="blank.png" onclick="toggleBox('box9')" />
-		</div>
-
-	</body>
+	</div>
+	
+	<div class="gameboard">
+		<img id="board" src="board.png"/>
+		<img class="move box" id="box1" src="blank.png" onclick="toggleBox('box1')" />
+		<img class="move box" id="box2" src="blank.png" onclick="toggleBox('box2')" />
+		<img class="move box" id="box3" src="blank.png" onclick="toggleBox('box3')" />
+		<img class="move box" id="box4" src="blank.png" onclick="toggleBox('box4')" />
+		<img class="move box" id="box5" src="blank.png" onclick="toggleBox('box5')" />
+		<img class="move box" id="box6" src="blank.png" onclick="toggleBox('box6')" />
+		<img class="move box" id="box7" src="blank.png" onclick="toggleBox('box7')" />
+		<img class="move box" id="box8" src="blank.png" onclick="toggleBox('box8')" />
+		<img class="move box" id="box9" src="blank.png" onclick="toggleBox('box9')" />
+	</div>
+	</div>
+</div>
+</body>
 </html>

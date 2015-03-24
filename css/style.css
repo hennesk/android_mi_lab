@@ -1,0 +1,66 @@
+h3 {
+	position:relative;
+	top:10px;
+	left:50px;
+	padding:20px;
+}
+img.move {
+	display:block;
+	float:clear;
+	left:5px;
+	top:10px;
+}
+.box {
+	position:absolute;
+	height:50px;
+	width:50px;
+	display:block;
+}
+.gameboard {
+	position:relative;
+}
+#board {
+	position:absolute;
+	width:300px;
+	height:300px;
+	display:block;
+}
+#box1 {
+	left:50px;
+	top:50px;
+}
+#box2 {
+	left:125px;
+	top:50px;
+}
+#box3 {
+	left:200px;
+	top:50px;
+}
+#box4 {
+	left:50px;
+	top:125px;
+}
+#box5 {
+	left:125px;
+	top:125px;
+}
+#box6 {
+	left:200px;
+	top:125px;
+}
+#box7 {
+	left:50px;
+	top:200px;
+}
+#box8 {
+	left:125px;
+	top:200px;
+}
+#box9 {
+	left:200px;
+	top:200px;
+}
+
+
+

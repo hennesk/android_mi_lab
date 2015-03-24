@@ -19,6 +19,7 @@ function endsWith(str, suffix) {
 
 function toggleBox(name) {
 	var box = document.getElementById(name);
+
 	if(endsWith(box.src, "blank.png") && (checkWin() == 0)) {
 		var boxNum =0;
 		
