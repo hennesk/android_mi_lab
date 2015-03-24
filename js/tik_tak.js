@@ -50,6 +50,7 @@ function toggleBox(name) {
 		var wins = 0;
 		if(winner != 0) {
 			alert('Player ' + winner + 'wins!');
+			navigator.vibrate(300);
 			var playerKey = "player"+winner;
 			var scoreString = window.localStorage.getItem(playerKey);
 			if(scoreString == null) {
@@ -63,7 +64,7 @@ function toggleBox(name) {
 			
 			console.log(playerKey + " wins: " + wins);
 		} else if(counter == 9) {
-			navigator.vibrate(3000);
+			navigator.vibrate(300);
 			alert("It's a Tie!");
 			counter++;
 			var scoreString = window.localStorage.getItem("ties");
@@ -136,4 +137,5 @@ function onPhotoDataSuccess(imageData) {
       // Show the captured photo
       // The inline CSS rules are used to resize the image
       //
-      smallImage.src = "data:image/jpeg;base64," + imageData;}
+      smallImage.src = "width:24;height:24;data:image/jpeg;base64," + imageData;
+}
